@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ptb1</title>
+</head>
+<body>
+<br>
+<button onclick="c()">Kết quả</button>
+<script>
+    let a;
+    let b;
+    a = eval(prompt('Nhập a:'));
+    b = eval(prompt('Nhập b:'));
+    document.writeln('giải phương trình: '+a+'*x+'+b+'=0');
+    document.writeln('');
+    function c(){
+        if(a==0){
+            if (b == 0) {
+                alert('PT vo so nghiem!');
+            }
+            else {
+                alert('PT vo nghiem!');
+            }
+        } else{
+            alert('PT co nghiem la: '+(-b/a));
+        }
+    }
+</script>
+</body>
+</html>
